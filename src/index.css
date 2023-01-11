@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.overlay::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video {
+  position: relative;
+  transition: 1s all ease;
+}
+
+.video:hover .overlay {
+  display: flex;
+}
+
+.overlay {
+  display: none;
+  gap: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100px;
+  background: rgba(0, 0, 0, 0.1);
+  align-items: center;
+  padding: 0 30px;
+  width: 640px;
+  overflow-x: scroll;
+  transition: 1s;
+}
+.circle {
+  position: relative;
+  min-height: 80px;
+  min-width: 80px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.circle img {
+  height: 80px;
+  width: 80px;
+}
