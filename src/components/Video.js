@@ -4,6 +4,7 @@ import ReactPlayer from "react-player";
 const Video = () => {
   const [url, setUrl] = useState("video_1.mp4");
   return (
+    <>
     <div className="video" id="video">
       <ReactPlayer url={url} controls />
       <div className="overlay">
@@ -29,6 +30,7 @@ const Video = () => {
         <div className="circle" onClick={() => setUrl("video_9.mp4")}><img src="video-9.png" /></div>
       </div>
     </div>
+    </>
   );
 };
 
